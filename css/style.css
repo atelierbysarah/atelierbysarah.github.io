@@ -152,8 +152,8 @@ label { }
 .btn { display: inline-block; padding: 14px 30px; margin-bottom: 0; font-size: 13px; font-weight: 800; 
     letter-spacing: 1px; line-height: 1.42857143; text-align: center; border: none; 
     text-transform: uppercase; border-radius: 100px;font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
-.btn-default { color: #fff; background-color: #aa9144; }
-.btn-default:hover { color: #fff; background-color: #8e7424; border-color: #8e7424; }
+.btn-default { color: #fff; background-color: #000; }
+.btn-default:hover { color: #fff; background-color: #eeeeee; border-color: #8e7424; }
 .btn-default.focus, .btn-default:focus { color: #fff; background-color: #8e7424; border-color: #8e7424; }
 .btn-primary { background-color: #2d281a; color: #fff; }
 .btn-primary:hover { background-color: #18150d; color: #fff; }
