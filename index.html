@@ -24,15 +24,13 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js "></script>
 <![endif]-->
     <script type="text/javascript">
-        alert("checking lang");
-var userLang = navigator.language || navigator.userLanguage; 
-        alert(userlang);
-//if (navigator.language || navigator.userLanguage == "cs-CZ") {
-   // alert("going at");
-   // window.location.replace("index_at.html");
-//} else {
- //   alert("not cz");
-//}
+    var userLang = navigator.language || navigator.userLanguage; 
+
+    if (navigator.language || navigator.userLanguage == "cs-CZ") {
+        
+    } else if (navigator.language || navigator.userLanguage == "de-AT") {
+        window.location.replace("index_at.html");
+    }
 </script>
 </head>
 
