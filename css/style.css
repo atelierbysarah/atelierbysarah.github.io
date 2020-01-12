@@ -228,6 +228,22 @@ label { }
 .btn-sm { font-size: 12px; padding: 5px 10px; }
 .btn-xs { font-size: 12px; padding: 5px 7px; }
 
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 16px;
+  }
+  
+  .flex-container > div {
+    width: 200px;
+    margin: 5px;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 400;
+  }
+
 /*-----------------------------------
     4. General / Elements 
 -----------------------------------*/
@@ -425,6 +441,8 @@ label { }
 /*--------------------------
     5.2 Navigations Regular
    ----------------------------*/
+   .hero-section-cennik { padding-top: 125px; padding-bottom: 85px; background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/cennik.jpg) no-repeat center; background-size: cover; }
+
 .hero-section { padding-top: 135px; padding-bottom: 135px; background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/hero-img.jpg) no-repeat center; background-size: cover; }
 .hero-caption { padding-top: 100px; padding-bottom: 100px; }
 .hero-title { font-size: 46px; color: #fff; line-height: 58px; font-weight: 600; margin-bottom: 30px; letter-spacing: -1px; }
@@ -537,7 +555,7 @@ label { }
 8. Footer 
 -------------------------------------*/
 .footer { background-color: #1e1c18; padding-top: 60px; padding-bottom: 60px; }
-.footer-block{background-color: #282725;padding: 40px 40px 10px 40px; border-radius: 10px;}
+.footer-block{background-color: #282725; padding: 40px 40px 10px 40px; border-radius: 10px;}
 .footer-widget p { color: #747474; }
 .footer-widget .widget-title { color: #fff; font-weight: 600; padding-bottom: 20px; margin-bottom: 30px; }
 .footer-widget { }
@@ -663,13 +681,15 @@ address { margin-bottom: 20px; font-style: normal; line-height: 1.42857143; }
 --------------------------*/
 .content { }
 .sidebar { }
-.post-block, .post-quote{ position: relative; background-color: #f4f1ec; padding: 30px; border-radius: 10px;  margin-bottom: 30px;}
+.post-block, .post-quote{ position: relative; background-color: #f4f1ec; padding: 25px; border-radius: 10px;  }
  
 /*-- use for thumbnail --*/
 .post-holder { position: relative; margin-bottom: 30px; }
 /*-- for single post page --*/
-.post-img { position: relative; }
-.post-img img{border-radius: 10px; width: 100%;}
+.post-img { position: relative;  margin-bottom: 20px; }
+.post-img img{display: block;
+    margin-left: auto;
+    margin-right: auto; border-radius: 10px; width: 80%; text-align: center;}
 .post-title { }
 .post-content {padding-top: 40px; padding-right: 40px;}
 .post-header { }
