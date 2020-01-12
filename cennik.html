@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Hair salon templates for mens hair cut service provider.">
     <meta name="keywords" content="hair salon website templates free download, html5 template, free responsive website templates, website layout,html5 website templates, template for website design, beauty HTML5 templates, cosmetics website templates free download">
     <title>Atelier by Sarah | Kadeřnictví v Mikulově</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -25,16 +27,48 @@
 <![endif]-->
 <script type="text/javascript">
 
-                function ReplaceContentInContainer(oldview,newview) {
-            
-                // var newview = document.getElementById("zeny")
-                 var backbtn = document.getElementById("back-btn")
-                newview.style.display = 'block';
-                backbtn.style.display = 'inline';
-                oldview.style.display = 'none';
-                var container = document.getElementById(id);
-                oldview.innerHTML = newview;
-                }
+            function ReplaceContentWithMuzi() {
+                  
+                var backbtn_muzi = document.getElementById("back-btn-muzi"); 
+                var backbtn_zeny = document.getElementById("back-btn-zeny"); 
+                var muzicontent = document.getElementById("muzi-content");
+                 
+                    home.style.display = 'none';
+                    muzicontent.style.display = 'block';
+                    backbtn_muzi.style.display = 'inline';
+                    backbtn_zeny.style.display = 'none';
+                    var container = document.getElementById(id);
+                    oldview.innerHTML = newview;
+            }
+            function ReplaceContentWithZeny() {
+                var backbtn_zeny = document.getElementById("back-btn-zeny"); 
+                var backbtn_muzi = document.getElementById("back-btn-muzi"); 
+                var zenycontent = document.getElementById("zeny-content");
+                    home.style.display = 'none';
+                    zenycontent.style.display = 'block';
+                    backbtn_zeny.style.display = 'inline';
+                    backbtn_muzi.style.display = "none";
+                    var container = document.getElementById(id);
+                    oldview.innerHTML = newview;
+            }
+            function BackFromMuzi() {
+                var muzicontent = document.getElementById("muzi-content");
+                var backbtn_zeny = document.getElementById("back-btn-zeny"); 
+                var backbtn_muzi = document.getElementById("back-btn-muzi"); 
+                muzicontent.style.display = 'none';
+                home.style.display = 'block';
+                backbtn_muzi.style.display = 'none';
+                backbtn_zeny.style.display = 'none';
+            }
+            function BackFromZeny() {
+                var zenycontent = document.getElementById("zeny-content");
+                var backbtn_zeny = document.getElementById("back-btn-zeny"); 
+                var backbtn_muzi = document.getElementById("back-btn-muzi"); 
+                zenycontent.style.display = 'none';
+                home.style.display = 'block';
+                backbtn_muzi.style.display = 'none';
+                backbtn_zeny.style.display = 'none';
+            }
             </script>
 </head>
 
@@ -106,44 +140,94 @@
             </div>
 
             
-            <a id="back-btn" style="display: none;" class="btn btn-white hover" href="javascript:ReplaceContentInContainer(muzi, home)">zpět</a>
-            
+            <a id="back-btn-muzi" style="display: none;" class="btn btn-white hover" href="javascript:BackFromMuzi()">zpět</a>
+            <a id="back-btn-zeny" style="display: none;" class="btn btn-white hover" href="javascript:BackFromZeny()">zpět</a>
+
                 
             
 
-            <div href="#" id="home" class="row">
-                <a href="javascript:ReplaceContentInContainer(home, zeny)"><div class="col-xs-6 colpadding">
+            <div id="home" class="row">
+                <a href="javascript:ReplaceContentWithZeny()"><div class="col-xs-6 colpadding">
                         <div class="service-block post-block">
                             <div class="service-icon mb20">
                                 <img class="img-responsive" style="position: relative;display: block; margin: 0 auto;" height="10px" src="images/head-w.svg" alt="">
                              </div>
                             <div style="text-align: center;" class="service-content">
                                 <h2  class="title">Ženy</h2>
-                                <div style="text-align: center;" >od 330 Kč</div>
+                                <div style="text-align: center;">od 330 Kč</div>
                             </div>
                         </div>
                 </div></a>
             
 
-                <a href="javascript:ReplaceContentInContainer(home, muzi)"><div class="col-xs-6 colpadding">
+                <a href="javascript:ReplaceContentWithMuzi()"><div class="col-xs-6 colpadding">
                     <div class="service-block post-block">
                         <div class="service-icon mb20">
                             <img class="img-responsive" style="display: block; margin: 0 auto;" height="10px" src="images/head-m.svg" alt="">
                          </div>
                         <div style="text-align: center;" class="service-content">
                             <h2 class="title">Muži</h2>
-                            <div style="text-align: center;" >od 100 Kč</div>
+                            <div style="text-align: center;">od 100 Kč</div>
                         </div>
                     </div>
                 </div></a>
             </div>
-            <div style="display: none;" id="zeny" class="row">
-                <div class="service-block post-block">
-                        <p>zeny</p>
-                </div>
-            </div>
-            <div href="#" style="display: none;" id="muzi" class="row">
+            <!-- -----------------
+                
+                ZENY CONTENT
+                
+                ----------------
+            -->
+            <div style="display: none;" id="zeny-content" class="row">
+                <div class="row">
+                    <div style="margin-top: 50px;" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="service-block post-block">
+                            <div class="service-icon mb20">
+                                <img height="80px" src="images/hair-clipper.svg" alt=""> </div>
+                            <div class="service-content">
+                                <h2><a href="# " class="title ">Klasický střih</a></h2>
+                                <p>Střih strojkem, mytí vlasů, foukání</p>
+                                <div class="price">100 Kč</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 50px;" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="service-block post-block">
+                            <!-- service block -->
+                            <div class="service-icon mb20">
+                                <!-- service img -->
+                                <img height="80px" src="images/nuzky.svg" alt=""> </div>
+                            <!-- service img -->
+                            <div class="service-content">
+                                <!-- service content -->
+                                <h2><a href="#" class="title ">Ruční střih</a></h2>
+                                <p>Střih nůžky, strojkem, mytí vlasů a foukání</p>
+                                <div class="price">180 Kč</div>
+                            </div>
+                            <!-- service content -->
+                        </div>
+                        <!-- /.service block -->
+                    </div>
+                    <div style="margin-top: 50px;" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="service-block post-block">
+                            <!-- service block -->
+                            <div class="service-icon mb20">
+                                <!-- service img -->
+                                <img height="80px" src="images/mustache.svg" alt=""> </div>
+                            <!-- service img -->
+                            <div class="service-content">
+                                <!-- service content -->
+                                <h2><a href="#" class="title ">Doplňky</a></h2>
+                                <p>Ornamenty, úprava vousů, ...</p>
+                                <div class="price "> 70 Kč</div>
+                            </div>
+                            <!-- service content -->
+                        </div>
+                        <!-- /.service block -->
+                    </div>
 
+            </div>
+            <div style="display: none;" id="muzi-content" class="row">
                 <div class="row">
                     <div style="margin-top: 50px;" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="service-block post-block">
@@ -196,8 +280,6 @@
                         </div>
                         <!-- /.service block -->
                     </div>
-
-
 
             </div>
 
