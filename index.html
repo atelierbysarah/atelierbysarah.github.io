@@ -31,13 +31,11 @@
     <script type="text/javascript">
         var userLang = navigator.language || navigator.userLanguage;
 
-        if (navigator.language || navigator.userLanguage == "cs-CZ") {
-
-        } else {
+        if (navigator.language || navigator.userLanguage.includes("de") {
             window.location.replace("index_at.html");
+        } else {
+            
         }
-        var userLang = navigator.language || navigator.userLanguage; 
-            alert (userLang);
     </script>
 </head>
 
