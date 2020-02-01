@@ -30,8 +30,19 @@
 <![endif]-->
     <script type="text/javascript">
         var userLang = navigator.language || navigator.userLanguage;
-
+        if (navigator.language || navigator.userLanguage.includes("cs") {
+            alert("Czech");
+        } else {
+            
+        }
+        if (navigator.language || navigator.userLanguage.includes("at") {
+            alert("Austria");
+            window.location.replace("index_at.html");
+        } else {
+            
+        }
         if (navigator.language || navigator.userLanguage.includes("de") {
+            alert("German");
             window.location.replace("index_at.html");
         } else {
             
