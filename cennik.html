@@ -29,6 +29,48 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js "></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js "></script>
 <![endif]-->
+<style>
+    table.darkTable {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #E4CCB1;
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  height: 214px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.darkTable td, table.darkTable th {
+  border: 1px solid #4A4A4A;
+  padding: 7px 0px;
+}
+table.darkTable tbody td {
+  font-size: 13px;
+  font-weight: bold;
+  color: #131311;
+}
+table.darkTable tr:nth-child(even) {
+  background: #F4EEDF;
+}
+table.darkTable thead {
+  background: #867A60;
+  border-bottom: 3px solid #000000;
+}
+table.darkTable thead th {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #000000;
+}
+table.darkTable thead th:first-child {
+  border-left: none;
+}
+
+table.darkTable tfoot td {
+  font-size: 12px;
+}
+</style>
     <script type="text/javascript">
        $(function () {
     setTimeout(function () { goToSecondTab(); }, 1000);
@@ -37,51 +79,7 @@
     }
 });
 
-        function ReplaceContentWithMuzi() {
-
-            var backbtn_muzi = document.getElementById("back-btn-muzi");
-            var backbtn_zeny = document.getElementById("back-btn-zeny");
-            var muzicontent = document.getElementById("muzi-content");
-
-            home.style.display = 'none';
-            muzicontent.style.display = 'block';
-            backbtn_muzi.style.display = 'inline';
-            backbtn_zeny.style.display = 'none';
-            var container = document.getElementById(id);
-            oldview.innerHTML = newview;
-        }
-
-        function ReplaceContentWithZeny() {
-            var backbtn_zeny = document.getElementById("back-btn-zeny");
-            var backbtn_muzi = document.getElementById("back-btn-muzi");
-            var zenycontent = document.getElementById("zeny-content");
-            home.style.display = 'none';
-            zenycontent.style.display = 'block';
-            backbtn_zeny.style.display = 'inline';
-            backbtn_muzi.style.display = "none";
-            var container = document.getElementById(id);
-            oldview.innerHTML = newview;
-        }
-
-        function BackFromMuzi() {
-            var muzicontent = document.getElementById("muzi-content");
-            var backbtn_zeny = document.getElementById("back-btn-zeny");
-            var backbtn_muzi = document.getElementById("back-btn-muzi");
-            muzicontent.style.display = 'none';
-            home.style.display = 'block';
-            backbtn_muzi.style.display = 'none';
-            backbtn_zeny.style.display = 'none';
-        }
-
-        function BackFromZeny() {
-            var zenycontent = document.getElementById("zeny-content");
-            var backbtn_zeny = document.getElementById("back-btn-zeny");
-            var backbtn_muzi = document.getElementById("back-btn-muzi");
-            zenycontent.style.display = 'none';
-            home.style.display = 'block';
-            backbtn_muzi.style.display = 'none';
-            backbtn_zeny.style.display = 'none';
-        }
+       
     </script>
 </head>
 
@@ -157,36 +155,7 @@
                 href="javascript:BackFromZeny()">zpět</a>
 
             <div id="home" class="row">
-                <a href="javascript:ReplaceContentWithZeny()">
-                    <div class="col-xs-6 colpadding">
-                        <div class="service-block post-block">
-                            <div class="service-icon mb20">
-                                <img class="img-responsive" style="position: relative;display: block; margin: 0 auto;"
-                                    height="10px" src="images/head-w.svg" alt="">
-                            </div>
-                            <div style="text-align: center;" class="service-content">
-                                <h2 class="title">Ženy</h2>
-                                <div style="text-align: center;">od 330 Kč</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-
-                <a href="javascript:ReplaceContentWithMuzi()">
-                    <div class="col-xs-6 colpadding">
-                        <div class="service-block post-block">
-                            <div class="service-icon mb20">
-                                <img class="img-responsive" style="display: block; margin: 0 auto;" height="10px"
-                                    src="images/head-m.svg" alt="">
-                            </div>
-                            <div style="text-align: center;" class="service-content">
-                                <h2 class="title">Muži</h2>
-                                <div style="text-align: center;">od 100 Kč</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+              
             </div>
             <!-- -----------------
 
@@ -194,6 +163,147 @@
 
                 ----------------
             -->
+
+        </br>
+
+        <table class="darkTable" style="width: 300px; margin-bottom: 30px;">
+            <thead>
+            <tr>
+            <th>Pánské</th>
+            <th>Cena</th>
+        
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>Strojek</td>
+            <td>&nbsp;150,-</td>
+          
+            </tr>
+            <tr>
+            <td>Nůžky</td>
+            <td>&nbsp;230,-</td>
+            
+            </tr>
+            <tr>
+            <td>Ornamenty, vousy</td>
+            <td>100,-&nbsp;</td>
+           
+            </tr>
+            
+            </tbody>
+            </table>
+
+            <table class="darkTable">
+                <thead>
+                <tr>
+                <th>Dámské</th>
+                <th>&nbsp;Kr&aacute;tk&yacute; vlas</th>
+                <th>&nbsp;Středn&iacute; vlas</th>
+                <th>Dlouh&yacute; vlas&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>Myt&iacute;, f&eacute;n, styling</td>
+                <td>&nbsp;330,-</td>
+                <td>400,-</td>
+                <td>480,-</td>
+                </tr>
+                <tr>
+                <td>střih, f&eacute;n, styling</td>
+                <td>&nbsp;480,-</td>
+                <td>&nbsp;620,-</td>
+                <td>750,-</td>
+                </tr>
+                <tr>
+                <td>
+                <p>Barva</p>
+                </td>
+                <td>550,-&nbsp;</td>
+                <td>690,-&nbsp;</td>
+                <td>900,-&nbsp;</td>
+                </tr>
+                <tr>
+                <td>&nbsp;Mel&iacute;r</td>
+                <td>&nbsp;700,-</td>
+                <td>880,-&nbsp;</td>
+                <td>950,-&nbsp;</td>
+                </tr>
+                <tr>
+                <td>&nbsp;Odbarven&iacute;</td>
+                <td>&nbsp;600,-</td>
+                <td>850,-&nbsp;</td>
+                <td>1000,-&nbsp;</td>
+                </tr>
+                <tr>
+                <td>Balayage 1h</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>600,-&nbsp;</td>
+                </tr>
+                <tr>
+                <td>&nbsp;Ombre 1h</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>600,-</td>
+                </tr>
+                <tr>
+                <td>&nbsp;Nadspotřeba<br>odměrka nav&iacute;c</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;300,-</td>
+                </tr>
+                <tr>
+                <td>&nbsp;1 Pramen alobal</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;100,-</td>
+                </tr>
+                </tbody>
+                </table>
+
+                <table class="darkTable" style="width: 40%; margin-top: 30px;">
+                    <thead>
+                    <tr >
+                    <th >Vlasová kůra</th>
+                    <th>Cena</th>
+                
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Olaplex odměrka</td>
+                    <td>&nbsp;350,-</td>
+                  
+                    </tr>
+                    <tr>
+                    <td>Fibre clinix</td>
+                    <td>&nbsp;200 - 280,-</td>
+                    
+                
+                    <tr>
+                    <td></td>
+                    <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                    <td>Prameny nasazení 1 ks</td>
+                    <td>18,-&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td>Prameny posunutí 1 ks</td>
+                        <td>25,-&nbsp;</td>
+                        </tr>
+                    
+                        <tr>
+                            <td>Společenský účes</td>
+                            <td>od 300,-&nbsp;</td>
+                            </tr>
+                    </tbody>
+                    </table>
+                
+
             <div style="display: none;" id="zeny-content" class="row">
                 <div class="row">
                     <div style="margin-top: 20px;" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -363,8 +473,8 @@
                             <div class="service-content">
                                 <!-- service content -->
                                 <h2><a class="title">Klasický střih</a></h2>
-                                <p>Střih strojkem, mytí vlasů, foukání</p>
-                                <div class="price">100 Kč</div>
+                                <p>Střih strojkem</p>
+                                <div class="price">150 Kč</div>
                             </div>
                             <!-- service content -->
                         </div>
@@ -381,7 +491,7 @@
                                 <!-- service content -->
                                 <h2><a href="#" class="title ">Ruční střih</a></h2>
                                 <p>Střih nůžky, strojkem, mytí vlasů a foukání</p>
-                                <div class="price">180 Kč</div>
+                                <div class="price">230 Kč</div>
                             </div>
                             <!-- service content -->
                         </div>
@@ -398,7 +508,7 @@
                                 <!-- service content -->
                                 <h2><a href="#" class="title ">Doplňky</a></h2>
                                 <p>Ornamenty, úprava vousů, ...</p>
-                                <div class="price "> 70 Kč</div>
+                                <div class="price ">100 Kč</div>
                             </div>
                             <!-- service content -->
                         </div>
