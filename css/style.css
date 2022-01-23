@@ -446,7 +446,7 @@ label { }
 /*--------------------------
     5.2 Navigations Regular
    ----------------------------*/
-   .hero-section-cennik { padding-top: 125px; padding-bottom: 85px; background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/cennik.jpg) no-repeat center; background-size: cover; }
+   .hero-section-cenik { padding-top: 125px; padding-bottom: 85px; background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/cenik.jpg) no-repeat center; background-size: cover; }
 
 .hero-section { padding-top: 135px; padding-bottom: 135px; background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../images/hero-img.jpg) no-repeat center; background-size: cover; }
 .hero-caption { padding-top: 100px; padding-bottom: 100px; }
