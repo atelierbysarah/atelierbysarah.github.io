@@ -27,6 +27,8 @@
 </head>
 
 <body>
+   
+    
     <div class="header">
         <div class="container">
             <div class="row">
@@ -78,19 +80,20 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="page-caption">
                         <h2 class="page-title">Fotogalerie hotových účesů</h2>
-                        <h3 class="">našich spokojených zákazníků</h3>
+                        <h3  style="color: #fff;" class="">našich spokojených zákazníků</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <div class="content">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="post-block">
-                        <div class="row ">
-                            
+                        <div class="row" id="grid-container">
+                            <!--
                             <div class="col-md-4">
                                 <div class="post-img">
                                     <a><img src="images/p6.jpg" alt="" class="img-responsive"></a>
@@ -263,7 +266,7 @@
                                 <div class="post-img">
                                     <a><img src="images/sed.jpg" alt="" class="img-responsive"></a>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -277,9 +280,6 @@
                             </li>
                             <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
                             <li>
                                 <a href="#" aria-label="Next">
                                     <span aria-hidden="true">&raquo;</span>
@@ -297,7 +297,7 @@
             <div class="footer-block">
                 <!-- footer block -->
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="footer-widget">
                             <h2 class="widget-title">Adresa ateliéru</h2>
                             <ul class="listnone contact">
@@ -307,43 +307,31 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="footer-widget footer-social">
                             <!-- social block -->
                             <h2 class="widget-title">sociální sítě</h2>
                             <ul class="listnone">
                                 <li>
-                                    <a href="https://www.facebook.com/kadernickyatelierangelika"> <i class="fa fa-facebook"></i> Facebook </a>
+                                    <a href="https://www.facebook.com/kadernickyatelierangelika"> <i
+                                            class="fa fa-facebook"></i> Facebook </a>
                                 </li>
-                                <li>
-                                    <a href="https://www.instagram.com/angelika_machackova/?hl=cs"> <i class="fa fa-instagram"></i> Instagram </a>
-                                </li>
+                                <!-- <li>
+                                    <a href="https://www.instagram.com/angelika_machackova/?hl=cs"> <i
+                                            class="fa fa-instagram"></i> Instagram </a>
+                                </li> -->
                             </ul>
                         </div>
                         <!-- /.social block -->
                     </div>
-                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                        <div class="footer-widget widget-newsletter">
-                            <!-- newsletter block -->
-                            <h2 class="widget-title">novinky</h2>
-                            <p>Zadejte vaši e-mailovou adresu a budete vždy v obraze. Budeme zasílat akce, slevy a novinky v našem ateliéru.</p>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="E-mailová adresa">
-                                <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Přihlásit</button>
-                            </span>
-                            </div>
-                            <!-- /input-group -->
-                        </div>
-                        <!-- newsletter block -->
-                    </div>
+                   
                 </div>
                 <div class="tiny-footer">
                     <!-- tiny footer block -->
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="copyright-content">
-                                <p>© Atelier Angelika 2021 | všechna práva vyhrazena</p>
+                                <p>© Atelier Angelika <script type="text/javascript">document.write(new Date().getFullYear());</script> | všechna práva vyhrazena</p>
                             </div>
                         </div>
                     </div>
@@ -361,6 +349,66 @@
     <script src="js/menumaker.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/sticky-header.js"></script>
+    <script>
+        var images = [
+          { name: "197832533_317399773427330_8451664511920185_n.jpg", location: "path/to/image1" },
+          { name: "334749877_584243176918650_9044371769895935763_n.jpg", location: "path/to/image2" },
+          { name: "334751605_729450878832661_4871850420953809550_n.jpg", location: "path/to/image3" },
+          { name: "334841064_6109491695777947_3187998678492431933_n.jpg", location: "path/to/image4" },
+          { name: "334907962_214392444509949_6224151502633857170_n.jpg", location: "path/to/image5" },
+          { name: "0210strih.jpg", location: "path/to/image5" },
+          { name: "0210strih1.jpg", location: "path/to/image5" },
+          { name: "0710.jpg", location: "path/to/image5" },
+          { name: "07101.jpg", location: "path/to/image5" },
+          { name: "07102.jpg", location: "path/to/image5" },
+          { name: "334918983_1428730811266675_6327910742557717919_n.jpg", location: "path/to/image5" },
+          { name: "334920922_223562460077727_4402214160587487051_n.jpg", location: "path/to/image5" },
+          { name: "334922940_530845759172282_6410137842910386946_n.jpg", location: "path/to/image5" },
+          { name: "334951200_219825837218548_7935198452579403594_n.jpg", location: "path/to/image5" },
+          { name: "334956743_558563283005607_1978876907651073939_n.jpg", location: "path/to/image5" },
+          { name: "334959327_932790881209945_4818478531650345821_n.jpg", location: "path/to/image5" },
+          { name: "334959707_1230430180918108_538483854992640613_n.jpg", location: "path/to/image5" },
+          { name: "334965555_193585843303225_2221176151870562687_n.jpg", location: "path/to/image5" },
+          { name: "334967050_5891235180983335_8683178788818500013_n.jpg", location: "path/to/image5" },
+          { name: "334968136_878167196625387_1803015530364579112_n.jpg", location: "path/to/image5" },
+          { name: "334972998_1205047080205578_9047657242076580127_n.jpg", location: "path/to/image5" },
+          { name: "334976902_764663684802397_2393984417919897508_n.jpg", location: "path/to/image5" },
+          { name: "334996073_980340380003081_5090835954987384979_n.jpg", location: "path/to/image5" },
+          { name: "335012321_115344064737887_162382059821067525_n.jpg", location: "path/to/image5" },
+          { name: "335020505_189661463774413_7623467420702825934_n.jpg", location: "path/to/image5" },
+        ];
+    
+        function shuffleArray(array) {
+          for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+          }
+          return array;
+        }
+    
+        function displayImages(images) {
+          var gridContainer = document.getElementById("grid-container");
+          shuffleArray(images);
+          images.forEach(function(image) {
+            var gridItem = document.createElement("div");
+            gridItem.className = "col-md-3 col-sm-4 col-xs-6";
+            
+            var gridSubItem = document.createElement("div")
+            gridSubItem.className = "post-img";
+
+            var img = document.createElement("img");
+            img.src = "images/ucesy/" + image.name;
+            img.className = "img-responsive";
+            gridSubItem.appendChild(img);
+            gridItem.appendChild(gridSubItem);
+            gridContainer.appendChild(gridItem);
+          });
+        }
+    
+        displayImages(images);
+    </script>
 </body>
 
 </html>
